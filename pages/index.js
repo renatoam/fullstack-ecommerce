@@ -263,6 +263,7 @@ export default function Home({ isConnected }) {
       </Main>
 
       <Footer>
+        <div></div>
         <section className="up">
           <div className="container">
             <section>
