@@ -7,6 +7,7 @@ import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import styled from "styled-components";
 import Header from "../components/Header";
+import Categories from "../components/Categories";
 import Icon from "../components/Icon";
 import { connectToDatabase } from "../util/mongodb";
 
@@ -111,32 +112,9 @@ export default function Home({ isConnected }) {
             </button>
           </div>
         </section>
-        <section className="categories">
-          <figure className="image">
-            <a href="#">
-              <img src="/images/banner-secundario-1.jpg" alt="Soccer" />
-              <div className="cover">Soccer</div>
-            </a>
-          </figure>
-          <figure className="image">
-            <a href="#">
-              <img src="/images/banner-secundario-2.jpg" alt="Casual" />
-              <div className="cover">Casual</div>
-            </a>
-          </figure>
-          <figure className="image">
-            <a href="#">
-              <img src="/images/banner-secundario-3.jpg" alt="Winter" />
-              <div className="cover">Winter</div>
-            </a>
-          </figure>
-          <figure className="image">
-            <a href="#">
-              <img src="/images/banner-secundario-4.jpg" alt="Summer" />
-              <div className="cover">Summer</div>
-            </a>
-          </figure>
-        </section>
+
+        <Categories />
+
       </Main>
 
       <Footer>
