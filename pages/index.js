@@ -191,8 +191,8 @@ function Icon({ icon, count, ...props }) {
           {count > 0 && <span>{count}</span>}
         </div>
       ) : (
-        <CustomIcon icon={icon} {...props} />
-      )}
+          <CustomIcon icon={icon} {...props} />
+        )}
     </>
   );
 }
@@ -270,6 +270,7 @@ export default function Home({ isConnected }) {
               <Icon icon={faInstagram} />
               <Icon icon={faYoutube} />
             </section>
+
             <section>
               <h2>Institucional</h2>
               <ul>
@@ -278,6 +279,7 @@ export default function Home({ isConnected }) {
                 <li>Contato</li>
               </ul>
             </section>
+
             <section>
               <h2>Informações</h2>
               <ul>
@@ -301,6 +303,7 @@ export default function Home({ isConnected }) {
                 <input type="email" name="email" placeholder="E-mail..." />
               </fieldset>
             </section>
+
           </div>
         </section>
         <section className="bottom">
