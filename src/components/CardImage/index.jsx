@@ -1,21 +1,20 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import { StyledFigure } from "./styles"
 
 export default function CardImage(props) {
   const { href, src, label } = props
 
   return (
-    <figure className="image">
+    <StyledFigure>
       <Link href={href}>
         <a>
-          <Image
+          <img
             src={src}
             alt={label}
-            layout="fill"
           />
           <div className="cover">{label}</div>
         </a>
       </Link>
-    </figure>
+    </StyledFigure>
   )
 }

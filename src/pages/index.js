@@ -17,7 +17,6 @@ const Main = styled.main`
     height: calc(100vh - 125px);
     background-repeat: no-repeat;
     background-position: center;
-    background: ;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -42,47 +41,6 @@ const Main = styled.main`
       font-weight: bold;
       box-shadow: 5px 5px 0 0 gray;
       cursor: pointer;
-    }
-  }
-
-  .categories {
-    background-color: #edf0f5;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 80px 20px;
-
-    .image {
-      position: relative;
-      width: 20%;
-
-      &:hover {
-        .cover {
-          max-height: 260px;
-        }
-      }
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .cover {
-      background-color: rgba(255, 255, 255, 0.6);
-      height: 100%;
-      width: 100%;
-      max-height: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: #3e3c3c;
-      overflow: hidden;
-      transition: all 0.4s ease-in-out;
     }
   }
 `;
