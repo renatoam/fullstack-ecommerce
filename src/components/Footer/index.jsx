@@ -1,10 +1,13 @@
+import Image from "next/image";
+import Icon from "../Icon";
+
 import {
   faFacebook,
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import { StyledFooter } from "./style";
-import Icon from "../Icon";
+import { StyledFooter } from "./styles";
+
 
 export default function Footer() {
   return (
