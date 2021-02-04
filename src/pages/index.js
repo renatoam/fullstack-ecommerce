@@ -1,12 +1,12 @@
 
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
 import styled from "styled-components";
 import Header from "../components/Header";
 import Categories from "../components/Categories";
 import Footer from "../components/Footer";
 import Icon from "../components/Icon";
 import { connectToDatabase } from "../util/mongodb";
+import Menu from "../components/Menu"
 
 const Main = styled.main`
   .banner {
@@ -42,12 +42,11 @@ const Main = styled.main`
   }
 `;
 
-
-
 export default function Home({ isConnected }) {
   return (
     <>
       <Header />
+      <Menu />
       <Main>
         <section className="banner">
           <div className="info">

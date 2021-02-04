@@ -2,8 +2,9 @@ import styled from "styled-components"
 
 const StyledHeader = styled.header`
 border-bottom: 1px solid #f3f3f4;
-height: 125px;
+height: auto;
 padding: 20px;
+
 
 h1 {
   a {
@@ -20,6 +21,11 @@ h1 {
   height: 100%;
   justify-content: space-between;
 
+  @media (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    }
+
   section {
     align-items: center;
     display: flex;
@@ -27,15 +33,44 @@ h1 {
 
     &:not(:nth-child(2)) {
       flex: 1 1 30%;
+      @media (max-width: 425px) {
+        order: 1;
+        width: 100%;
+        border: 1px solid #f3f3f4;
+        border-radius: 16px;
+        margin: 10px;
+      }
     }
 
     &:nth-child(2) {
       flex: 2 1 40%;
+    
+    @media (max-width: 425px) {
+        order: 0;
+        width: 100%;
+        height: 62px;
+        padding: 20px;
+        border: none;
+      }
     }
+
 
     &:last-child {
       gap: 15px;
+    
+      @media (max-width: 425px) {
+        order: 2;
+        width: 100%;
+        height: 62px;
+        padding: 10px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
+
+
   }
 }
 
@@ -45,6 +80,11 @@ input {
   padding-left: 40px;
   font-size: 1.2rem;
   line-height: 1.5;
+
+  @media (max-width: 425px) {
+    width: 90%;
+    padding-left: 15px;
+  }
 }
 
 .cart {

@@ -1,3 +1,4 @@
+import { useContext } from "react"
 import {
   faHeart,
   faSearch,
@@ -7,9 +8,16 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import StyledHeader from "./styles";
 import Icon from "../Icon";
-import Menu from "../Menu"
+import { MenuContext } from "../../context/menu"
 
 export default function Header() {
+  const { setDisplay } = useContext(MenuContext)
+
+  function handleDisplay() {
+    setDisplay("open")
+    console.log("error")
+  }
+
   return (
     <StyledHeader>
       <div className="container">
@@ -26,10 +34,11 @@ export default function Header() {
           <Icon icon={faUser} />
           <Icon icon={faHeart} />
           <Icon icon={faShoppingCart} count={2} />
-          <Icon icon={faBars} />
+          <div className="menu" onClick={handleDisplay} >
+            <Icon icon={faBars} />
+          </div>
         </section>
       </div>
-      <Menu />
     </StyledHeader>
   );
 }
