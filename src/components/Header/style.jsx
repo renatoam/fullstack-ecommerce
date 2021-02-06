@@ -1,6 +1,4 @@
-
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 export const StyledHeader = styled.header`
   border-bottom: 1px solid #f3f3f4;
@@ -21,12 +19,11 @@ export const StyledHeader = styled.header`
   .container {
     height: 100%;
     justify-content: space-between;
-    
 
     section {
       align-items: center;
       display: flex;
-      justify-content: center;    
+      justify-content: center;
 
       &:not(:nth-child(2)) {
         flex: 1 1 30%;
@@ -69,4 +66,4 @@ export const StyledHeader = styled.header`
       transition: 0.2s all ease-in-out;
     }
   }
-`;
+`

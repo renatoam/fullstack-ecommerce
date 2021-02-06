@@ -1,13 +1,13 @@
 import {
+  faBars,
   faHeart,
   faSearch,
   faShoppingCart,
-  faUser,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
-import StyledHeader from "./styles";
-import Icon from "../Icon";
-import Menu from "../Menu"
+  faUser
+} from '@fortawesome/free-solid-svg-icons'
+import Icon from '../Icon'
+import Menu from '../Menu'
+import StyledHeader from './styles'
 
 export default function Header() {
   return (
@@ -31,5 +31,5 @@ export default function Header() {
       </div>
       <Menu />
     </StyledHeader>
-  );
+  )
 }

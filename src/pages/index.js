@@ -1,16 +1,14 @@
-
-import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
-import styled from "styled-components";
-import Header from "../components/Header";
-import Categories from "../components/Categories";
-import Footer from "../components/Footer";
-import Icon from "../components/Icon";
-import { connectToDatabase } from "../util/mongodb";
+import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
+import styled from 'styled-components'
+import Categories from '../components/Categories'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Icon from '../components/Icon'
+import { connectToDatabase } from '../util/mongodb'
 
 const Main = styled.main`
   .banner {
-    background-image: url("/images/banner-adidas2.webp");
+    background-image: url('/images/banner-adidas2.webp');
     height: calc(100vh - 125px);
     background-repeat: no-repeat;
     background-position: center;
@@ -40,9 +38,7 @@ const Main = styled.main`
       cursor: pointer;
     }
   }
-`;
-
-
+`
 
 export default function Home({ isConnected }) {
   return (
@@ -60,21 +56,19 @@ export default function Home({ isConnected }) {
         </section>
 
         <Categories />
-
       </Main>
 
       <Footer />
-
     </>
-  );
+  )
 }
 
 export async function getServerSideProps(context) {
-  const { client } = await connectToDatabase();
+  const { client } = await connectToDatabase()
 
-  const isConnected = await client.isConnected();
+  const isConnected = await client.isConnected()
 
   return {
-    props: { isConnected },
-  };
+    props: { isConnected }
+  }
 }
