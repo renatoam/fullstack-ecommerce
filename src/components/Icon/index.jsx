@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styled from 'styled-components'
 
 const CustomIcon = styled(FontAwesomeIcon)`
   color: #868995;
@@ -11,7 +11,7 @@ const CustomIcon = styled(FontAwesomeIcon)`
     color: #3d3f45;
     transform: translateY(-2px);
   }
-`;
+`
 
 export default function Icon({ icon, count, ...props }) {
   return (
@@ -25,5 +25,5 @@ export default function Icon({ icon, count, ...props }) {
         <CustomIcon icon={icon} {...props} />
       )}
     </>
-  );
+  )
 }

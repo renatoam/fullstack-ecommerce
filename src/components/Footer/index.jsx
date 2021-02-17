@@ -94,14 +94,14 @@ export default function Footer() {
           <p>Copyright ©2021 All rights reserved</p>
           <p>
             Inspired by Shopper from
-              <a href="https://colorlib.com/preview/#shoppers">Colorlib</a>
+            <a href="https://colorlib.com/preview/#shoppers">Colorlib</a>
           </p>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Powered by{" "}
+            Powered by{' '}
             <Image
               width="80"
               height="auto"
@@ -112,5 +112,5 @@ export default function Footer() {
         </div>
       </section>
     </StyledFooter>
-  );
+  )
 }
