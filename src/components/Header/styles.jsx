@@ -1,34 +1,33 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
-const StyledHeader = styled.header`
-border-bottom: 1px solid #f3f3f4;
-height: auto;
-padding: 20px;
-position: sticky;
-top: 0;
-background-color: #FFFFFF;
-
-@media (max-width: 640px) {
-  position: relative;
-}
-
-
-h1 {
-  a {
-    text-transform: uppercase;
-    color: #25262a;
-    letter-spacing: 0.2em;
-    font-size: 20px;
-    padding: 5px 30px;
-    border: 2px solid #25262a;
-  }
-}
-
-.container {
-  height: 100%;
-  justify-content: space-between;
+export const StyledHeader = styled.header`
+  border-bottom: 1px solid #f3f3f4;
+  height: auto;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
 
   @media (max-width: 640px) {
+    position: relative;
+  }
+
+  h1 {
+    a {
+      text-transform: uppercase;
+      color: #25262a;
+      letter-spacing: 0.2em;
+      font-size: 20px;
+      padding: 5px 30px;
+      border: 2px solid #25262a;
+    }
+  }
+
+  .container {
+    height: 100%;
+    justify-content: space-between;
+
+    @media (max-width: 640px) {
     display: flex;
     flex-direction: column;
     }
@@ -76,7 +75,6 @@ h1 {
       }
     }
   }
-}
 
 input {
   border: none;
@@ -91,23 +89,24 @@ input {
   }
 }
 
-.cart {
-  position: relative;
+  .cart {
+    position: relative;
 
-  span {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    font-size: 13px;
-    width: 24px;
-    height: 24px;
-    line-height: 24px;
-    border-radius: 50%;
-    display: block;
-    text-align: center;
-    background-color: #7971ea;
-    color: #fff;
-    transition: 0.2s all ease-in-out;
+    span {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      font-size: 13px;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      border-radius: 50%;
+      display: block;
+      text-align: center;
+      background-color: #7971ea;
+      color: #fff;
+      transition: 0.2s all ease-in-out;
+    }
   }
 }
 
@@ -117,5 +116,3 @@ input {
   }
 }
 `;
-
-export default StyledHeader;

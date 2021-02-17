@@ -5,9 +5,9 @@ import { MenuProvider } from "../context/menu"
 
 const theme = {
   colors: {
-    primary: "#0070f3",
-  },
-};
+    primary: '#0070f3'
+  }
+}
 
 export default function App({ Component, pageProps }) {
   return (
@@ -22,5 +22,5 @@ export default function App({ Component, pageProps }) {
         </MenuProvider>
       </ThemeProvider>
     </>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledMenu = styled.nav`
   width: 100%;
@@ -175,4 +175,4 @@ const StyledMenu = styled.nav`
   }
 `;
 
-export default StyledMenu;
+export default StyledMenu

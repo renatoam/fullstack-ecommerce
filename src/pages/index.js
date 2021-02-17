@@ -10,7 +10,7 @@ import Menu from "../components/Menu"
 
 const Main = styled.main`
   .banner {
-    background-image: url("/images/banner-adidas2.webp");
+    background-image: url('/images/banner-adidas2.webp');
     height: calc(100vh - 125px);
     background-repeat: no-repeat;
     background-position: center;
@@ -59,21 +59,19 @@ export default function Home({ isConnected }) {
         </section>
 
         <Categories />
-
       </Main>
 
       <Footer />
-
     </>
-  );
+  )
 }
 
 export async function getServerSideProps(context) {
-  const { client } = await connectToDatabase();
+  const { client } = await connectToDatabase()
 
-  const isConnected = await client.isConnected();
+  const isConnected = await client.isConnected()
 
   return {
-    props: { isConnected },
-  };
+    props: { isConnected }
+  }
 }

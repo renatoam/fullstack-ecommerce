@@ -140,5 +140,5 @@ export default function Menu() {
         </li>
       </ul>
     </StyledMenu>
-  );
+  )
 }

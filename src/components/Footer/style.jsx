@@ -1,6 +1,4 @@
-
-import styled from "styled-components";
-
+import styled from 'styled-components'
 
 export const StyledFooter = styled.footer`
   border-top: 1px solid #edf0f5;
@@ -11,4 +9,4 @@ export const StyledFooter = styled.footer`
     background-color: #edf0f5;
     height: 80px;
   }
-`;
+`

@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import {
+  faBars,
   faHeart,
   faSearch,
   faShoppingCart,
@@ -39,5 +40,5 @@ export default function Header() {
         </section>
       </div>
     </StyledHeader>
-  );
+  )
 }

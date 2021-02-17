@@ -1,10 +1,10 @@
 import {
   faFacebook,
   faInstagram,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import { StyledFooter } from "./style";
-import Icon from "../Icon";
+  faYoutube
+} from '@fortawesome/free-brands-svg-icons'
+import Icon from '../Icon'
+import { StyledFooter } from './style'
 
 export default function Footer() {
   return (

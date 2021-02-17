@@ -1,27 +1,27 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const StyledFigure = styled.figure`
-    position: relative;
-    width: 240px;
-    margin: 10px 0;
-    
-    @media (max-width: 1024px) {
-      width: 45%;
-    }
+  position: relative;
+  width: 240px;
+  margin: 10px 0;
 
-    @media (max-width: 640px) {
-      width: 95%;
-    }
+  @media (max-width: 1024px) {
+    width: 45%;
+  }
 
-    &:hover {
-      .cover {
-        max-height: 260px;
-      }
-    }
+  @media (max-width: 640px) {
+    width: 95%;
+  }
 
-    img {
-      width: 100%;
+  &:hover {
+    .cover {
+      max-height: 260px;
     }
+  }
+
+  img {
+    width: 100%;
+  }
 
   .cover {
     background-color: rgba(255, 255, 255, 0.6);
@@ -40,4 +40,5 @@ export const StyledFigure = styled.figure`
     color: #3e3c3c;
     overflow: hidden;
     transition: all 0.4s ease-in-out;
-  }`
+  }
+`

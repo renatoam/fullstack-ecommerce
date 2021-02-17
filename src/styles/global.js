@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -26,6 +26,6 @@ const GlobalStyle = createGlobalStyle`
     max-width: 1140px;
     margin: auto;
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle
