@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const StyledFigure = styled.figure`
-  
     position: relative;
     width: 240px;
     margin: 10px 0;

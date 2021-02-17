@@ -15,7 +15,6 @@ export default function Header() {
 
   function handleDisplay() {
     setDisplay("open")
-    console.log("error")
   }
 
   return (
