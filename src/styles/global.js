@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .container, 
+  nav {
     max-width: 1140px;
     margin: auto;
   }

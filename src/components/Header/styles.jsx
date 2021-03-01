@@ -1,9 +1,16 @@
 import styled from 'styled-components'
 
-const StyledHeader = styled.header`
+export const StyledHeader = styled.header`
   border-bottom: 1px solid #f3f3f4;
-  height: 125px;
+  height: auto;
   padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+
+  @media (max-width: 640px) {
+    position: relative;
+  }
 
   h1 {
     a {
@@ -20,32 +27,67 @@ const StyledHeader = styled.header`
     height: 100%;
     justify-content: space-between;
 
-    section {
-      align-items: center;
-      display: flex;
-      justify-content: center;
+    @media (max-width: 640px) {
+    display: flex;
+    flex-direction: column;
+    }
 
-      &:not(:nth-child(2)) {
-        flex: 1 1 30%;
+  section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &:not(:nth-child(2)) {
+      flex: 1 1 30%;
+      @media (max-width: 640px) {
+        order: 1;
+        width: 100%;
+        border: 1px solid #f3f3f4;
+        border-radius: 16px;
+        margin: 10px;
       }
+    }
 
-      &:nth-child(2) {
-        flex: 2 1 40%;
+    &:nth-child(2) {
+      flex: 2 1 40%;
+    
+    @media (max-width: 640px) {
+        order: 0;
+        width: 100%;
+        height: 62px;
+        padding: 20px;
+        border: none;
       }
+    }
 
-      &:last-child {
-        gap: 15px;
+    &:last-child {
+      gap: 15px;
+    
+      @media (max-width: 640px) {
+        order: 2;
+        width: 100%;
+        height: 62px;
+        padding: 10px;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
     }
   }
 
-  input {
-    border: none;
-    height: 40px;
-    padding-left: 40px;
-    font-size: 1.2rem;
-    line-height: 1.5;
+input {
+  border: none;
+  height: 40px;
+  padding-left: 40px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+
+  @media (max-width: 640px) {
+    width: 90%;
+    padding-left: 15px;
   }
+}
 
   .cart {
     position: relative;
@@ -66,6 +108,11 @@ const StyledHeader = styled.header`
       transition: 0.2s all ease-in-out;
     }
   }
-`
+}
 
-export default StyledHeader
+.menu {
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+`;

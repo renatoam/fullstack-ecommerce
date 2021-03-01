@@ -1,10 +1,12 @@
-import { faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons'
-import styled from 'styled-components'
-import Categories from '../components/Categories'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import Icon from '../components/Icon'
-import { connectToDatabase } from '../util/mongodb'
+
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+import Header from "../components/Header";
+import Categories from "../components/Categories";
+import Footer from "../components/Footer";
+import Icon from "../components/Icon";
+import { connectToDatabase } from "../util/mongodb";
+import Menu from "../components/Menu"
 
 const Main = styled.main`
   .banner {
@@ -38,12 +40,13 @@ const Main = styled.main`
       cursor: pointer;
     }
   }
-`
+`;
 
 export default function Home({ isConnected }) {
   return (
     <>
       <Header />
+      <Menu />
       <Main>
         <section className="banner">
           <div className="info">
