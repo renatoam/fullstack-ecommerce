@@ -7,7 +7,7 @@ import {
   faUser,
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
-import StyledHeader from "./styles";
+import { StyledHeader } from "./styles";
 import Icon from "../Icon";
 import { MenuContext } from "../../context/menu"
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   border-bottom: 1px solid #f3f3f4;
@@ -26,6 +26,7 @@ export const StyledHeader = styled.header`
   .container {
     height: 100%;
     justify-content: space-between;
+    
 
     @media (max-width: 640px) {
     display: flex;
