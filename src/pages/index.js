@@ -16,7 +16,7 @@ export default function Home({ isConnected }) {
   function addOneToState() {
     dispatch({
       type: 'ADD',
-      payload: incr + 1
+      payload: 1
     })
   }
 

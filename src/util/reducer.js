@@ -10,7 +10,7 @@ export const exampleReducer = (state = '', action) => {
 
 export const incrReducer = (state = 0, action) => {
   if (action.type === 'ADD')
-   return action.payload
+   return state + action.payload
 
    return state
 }
