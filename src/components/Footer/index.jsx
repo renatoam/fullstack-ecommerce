@@ -5,6 +5,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { StyledFooter } from "./style";
 import Icon from "../Icon";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -63,8 +64,8 @@ export default function Footer() {
           >
             Powered by{" "}
             <Image
-              width="80"
-              height="auto"
+              width={80}
+              height={80}
               src="/vercel.svg"
               alt="Vercel Logo"
             />

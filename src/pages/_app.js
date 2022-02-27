@@ -1,5 +1,8 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../styles/global";
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import rootReducer from "../util/rootReducer";
 
 const theme = {
   colors: {
@@ -7,13 +10,17 @@ const theme = {
   },
 };
 
+const store = createStore(rootReducer)
+
 export default function App({ Component, pageProps }) {
   return (
     <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <Provider store={store}>
+        <ThemeProvider theme={theme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </Provider>
     </>
   );
 }

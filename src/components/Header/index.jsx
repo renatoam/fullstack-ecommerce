@@ -8,8 +8,21 @@ import {
 import StyledHeader from "./styles";
 import Icon from "../Icon";
 import Menu from "../Menu"
+import { useState } from "react";
+
+const dispatch = () => {}
 
 export default function Header() {
+  // const [cart, setCart] = useState([])
+
+  // function addToCart(event) {
+  //   const id = event.target.id
+
+  //   setCart(currentState => {
+  //     return [...currentState, id]
+  //   })
+  // }
+
   return (
     <StyledHeader>
       <div className="container">
