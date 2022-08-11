@@ -1,4 +1,4 @@
-import { MongoClient } from "mongodb";
+import { MongoClient } from 'mongodb';
 
 const { MONGODB_URI, MONGODB_DB } = process.env;
 
@@ -43,6 +43,9 @@ export async function connectToDatabase() {
       };
     });
   }
+
   cached.conn = await cached.promise;
   return cached.conn;
 }
+
+export const client = new MongoClient(MONGODB_URI, {});
