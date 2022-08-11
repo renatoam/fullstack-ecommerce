@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../styles/global";
+import GlobalStyle from "../modules/shared/styles/global";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import rootReducer from "../util/rootReducer";
